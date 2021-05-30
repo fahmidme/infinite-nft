@@ -6,7 +6,8 @@
 		}
 	},
 	"contracts": {
-		"NonFungibleToken": "./cadence/contracts/NonFungibleToken.cdc"
+		"NonFungibleToken": "./cadence/contracts/NonFungibleToken.cdc",
+		"ExampleNFT": "./cadence/contracts/ExampleNFT.cdc"
 	},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
@@ -21,7 +22,7 @@
 	},
 	"deployments": {
 		"testnet": {
-      "admin-account": ["NonFungibleToken"]
+      "admin-account": ["NonFungibleToken", "ExampleNFT"]
     }
 	}
 }
